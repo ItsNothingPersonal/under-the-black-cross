@@ -1,27 +1,70 @@
+import { useRoutes } from 'solid-app-router'
 import type { Component } from 'solid-js'
+import Journal from './Journal'
+import Home from './Home'
+import ExpHistory from './ExpHistory'
+import DiceAndDifficulties from './rules-infos/DiceAndDifficulties'
+import FrenzyAndRoetschreck from './rules-infos/FrenzyAndRoetschreck'
+import RoadsAndDegeneration from './rules-infos/RoadsAndDegeneration'
+import SpotifyPlaylist from './SpotifyPlaylist'
+import Impressum from './Impressum'
+import CharacterSheet from 'components/CharacterSheet'
 
-import logo from './logo.svg'
-import styles from './App.module.css'
+const routes = [
+    {
+        path: '/journal',
+        component: Journal,
+    },
+    {
+        path: '/exp-history',
+        component: ExpHistory,
+    },
+    {
+        path: '/spotify-playlist',
+        component: SpotifyPlaylist,
+    },
+    {
+        path: '/rules-info/dice-and-difficulties',
+        component: DiceAndDifficulties,
+    },
+    {
+        path: '/rules-info/frenzy-and-roetschreck',
+        component: FrenzyAndRoetschreck,
+    },
+    {
+        path: '/rules-info/roads-and-degeneration',
+        component: RoadsAndDegeneration,
+    },
+    {
+        path: '/character/:surname?/:prename',
+        component: CharacterSheet,
+    },
+    {
+        path: '/npc/sevilla/:surname?/:prename',
+        component: CharacterSheet,
+    },
+    {
+        path: '/npc/:surname?/:prename',
+        component: CharacterSheet,
+    },
+    {
+        path: '/impressum',
+        component: Impressum,
+    },
+    {
+        path: '/',
+        component: Home,
+    },
+    {
+        path: '/*',
+        component: Home,
+    },
+]
 
 const App: Component = () => {
-    return (
-        <div class={styles.App}>
-            <header class={styles.header}>
-                <img src={logo} class={styles.logo} alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    class={styles.link}
-                    href="https://github.com/solidjs/solid"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn Solid
-                </a>
-            </header>
-        </div>
-    )
+    const Routes = useRoutes(routes)
+
+    return <Routes />
 }
 
 export default App
