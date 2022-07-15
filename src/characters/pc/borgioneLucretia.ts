@@ -2,6 +2,7 @@ import { Clan } from 'enums/clan'
 import { Sex } from 'enums/sex'
 import { Status } from 'enums/status'
 import { CharacterInfo } from 'types/characterinfo'
+import img from './../../assets/lucretia.jpg'
 
 export const borgioneLucretia: CharacterInfo = {
     prename: 'Lucretia',
@@ -10,7 +11,7 @@ export const borgioneLucretia: CharacterInfo = {
     sex: Sex.FEMALE,
     position: undefined,
     apparentAge: 15,
-    image: '/src/assets/lucretia.jpg',
+    image: img,
     generation: 8,
     status: Status.ACTIVE,
     embrace: undefined,

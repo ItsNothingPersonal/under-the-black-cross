@@ -64,6 +64,10 @@ const CharacterSheet: Component = () => {
             <img
                 class="row-span-2 md:row-span-3 max-h-96 mt-0"
                 src={selectedCharacter()?.image}
+                loading="eager"
+                alt={`Charakterbild von ${selectedCharacter()?.prename} ${
+                    selectedCharacter()?.surname
+                }`}
             />
         </div>
     )
