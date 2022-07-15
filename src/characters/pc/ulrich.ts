@@ -2,6 +2,7 @@ import { Clan } from 'enums/clan'
 import { Sex } from 'enums/sex'
 import { Status } from 'enums/status'
 import { CharacterInfo } from 'types/characterinfo'
+import img from './../../assets/ulrich.jpg'
 
 export const ulrich: CharacterInfo = {
     prename: 'Ulrich',
@@ -10,7 +11,7 @@ export const ulrich: CharacterInfo = {
     sex: Sex.MALE,
     position: undefined,
     apparentAge: undefined,
-    image: '/src/assets/ulrich.jpg',
+    image: img,
     generation: 8,
     status: Status.ACTIVE,
     embrace: undefined,
