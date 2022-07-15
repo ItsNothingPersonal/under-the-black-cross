@@ -1,34 +1,34 @@
-## Usage
+# Under The Black Cross
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+Die Seite für unsere Gruppe rund um die Chronik 'Under the Black Cross'
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+## Entwicklung
+
+1.) Projekt klonen
 
 ```bash
-$ npm install # or pnpm install or yarn install
+git clone https://github.com/ItsNothingPersonal/under-the-black-cross.git
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+2.) Abängigkeiten installieren
 
-## Available Scripts
+```bash
+pnpm install
+```
 
-In the project directory, you can run:
+3.) Entwicklungsserver wie folgt starten
 
-### `npm dev` or `npm start`
+```bash
+pnpm run dev
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
 
-The page will reload if you make edits.<br>
+## Bauen
 
-### `npm run build`
+```bash
+pnpm run build
+```
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+## License
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+[MIT](https://choosealicense.com/licenses/mit/)

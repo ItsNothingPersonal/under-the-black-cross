@@ -1,30 +1,42 @@
 {
     "name": "under-the-black-cross",
-    "version": "0.0.1",
+    "version": "1.0.2",
     "description": "project page for the Vampire 20th Dark Ages Campaign 'Under the Black Cross'",
     "scripts": {
         "start": "vite",
         "dev": "vite",
         "build": "vite build",
         "serve": "vite preview",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "release:major": "./node_modules/generate-changelog/bin/generate -M && git add CHANGELOG.md && git commit -m 'chore(release): updated CHANGELOG.md' && pnpm version major && git push origin && git push origin --tags",
+        "release:minor": "./node_modules/generate-changelog/bin/generate -m && git add CHANGELOG.md && git commit -m 'chore(release): updated CHANGELOG.md' && pnpm version minor && git push origin && git push origin --tags",
+        "release:patch": "./node_modules/generate-changelog/bin/generate -p && git add CHANGELOG.md && git commit -m 'chore(release): updated CHANGELOG.md' && pnpm version patch && git push origin && git push origin --tags"
     },
     "license": "MIT",
     "devDependencies": {
         "@commitlint/cli": "^17.0.3",
         "@commitlint/config-conventional": "^17.0.3",
+        "@tailwindcss/typography": "^0.5.4",
         "@typescript-eslint/eslint-plugin": "^5.30.6",
         "@typescript-eslint/parser": "^5.30.6",
+        "autoprefixer": "^10.4.7",
+        "daisyui": "^2.19.0",
         "eslint": "^8.19.0",
         "eslint-plugin-solid": "^0.7.1",
+        "generate-changelog": "^1.8.0",
         "husky": "^8.0.0",
         "lint-staged": "^13.0.3",
+        "postcss": "^8.4.14",
         "prettier": "^2.7.1",
+        "tailwindcss": "^3.1.6",
         "typescript": "^4.6.4",
         "vite": "^2.9.9",
-        "vite-plugin-solid": "^2.2.6"
+        "vite-plugin-markdown": "^2.0.2",
+        "vite-plugin-solid": "^2.2.6",
+        "vite-tsconfig-paths": "^3.5.0"
     },
     "dependencies": {
+        "solid-app-router": "^0.4.1",
         "solid-js": "^1.4.2"
     }
 }
