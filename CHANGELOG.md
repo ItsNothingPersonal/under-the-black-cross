@@ -1,3 +1,11 @@
+#### 1.0.1 (2022-07-15)
+
+##### Bug Fixes
+
+-   **images:**
+    -   changed img behaviour (846523e1)
+    -   fixed images in prod build (4a8d9973)
+
 ## 1.0.0 (2022-07-15)
 
 ##### Chores
