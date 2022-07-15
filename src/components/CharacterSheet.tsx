@@ -2,7 +2,13 @@ import { npcSevillaDB } from 'characters/npc/npcSevillaDB'
 import { characterDB } from 'characters/pcDB'
 import { CharacterType } from 'enums/characterType'
 import { useLocation, useParams } from 'solid-app-router'
-import { Component, createEffect, createMemo, createSignal } from 'solid-js'
+import {
+    Component,
+    createEffect,
+    createMemo,
+    createSignal,
+    Show,
+} from 'solid-js'
 import { CharacterInfo } from 'types/characterinfo'
 
 const CharacterSheet: Component = () => {
@@ -61,14 +67,16 @@ const CharacterSheet: Component = () => {
                 <label class="font-bold">Status:</label>
                 {selectedCharacter()?.status ?? '-'}
             </div>
-            <img
-                class="row-span-2 md:row-span-3 max-h-96 mt-0"
-                src={selectedCharacter()?.image}
-                loading="eager"
-                alt={`Charakterbild von ${selectedCharacter()?.prename} ${
-                    selectedCharacter()?.surname
-                }`}
-            />
+            <Show when={selectedCharacter()?.image}>
+                <img
+                    class="row-span-2 md:row-span-3 max-h-96 mt-0"
+                    src={selectedCharacter()?.image}
+                    loading="eager"
+                    alt={`Charakterbild von ${selectedCharacter()?.prename} ${
+                        selectedCharacter()?.surname
+                    }`}
+                />
+            </Show>
         </div>
     )
 }
