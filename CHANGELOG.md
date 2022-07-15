@@ -1,3 +1,9 @@
+#### 1.0.2 (2022-07-15)
+
+##### Bug Fixes
+
+-   **images:** changed character picture display (115927fb)
+
 #### 1.0.1 (2022-07-15)
 
 ##### Bug Fixes
