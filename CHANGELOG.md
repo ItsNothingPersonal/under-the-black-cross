@@ -1,3 +1,9 @@
+#### 1.0.5 (2022-07-18)
+
+##### New Features
+
+-   **images:** changed image format (7093dd91)
+
 #### 1.0.4 (2022-07-18)
 
 ##### New Features

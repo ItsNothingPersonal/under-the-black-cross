@@ -2,7 +2,7 @@ import { Clan } from 'enums/clan'
 import { Sex } from 'enums/sex'
 import { Status } from 'enums/status'
 import { CharacterInfo } from 'types/characterinfo'
-import img from './../../assets/karl_friedrich.png'
+import img from './../../assets/karl_friedrich.webp'
 
 export const vonKloedenKarlFriedrich: CharacterInfo = {
     prename: 'Karl-Friedrich',
