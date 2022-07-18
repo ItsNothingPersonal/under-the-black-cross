@@ -1,3 +1,9 @@
+#### 1.0.3 (2022-07-18)
+
+##### Bug Fixes
+
+-   **journal:** corrected the links in the journal (5493c0fe)
+
 #### 1.0.2 (2022-07-15)
 
 ##### Bug Fixes
