@@ -69,7 +69,7 @@ const CharacterSheet: Component = () => {
             </div>
             <Show when={selectedCharacter()?.image}>
                 <img
-                    class="row-span-2 md:row-span-3 max-h-96 mt-0"
+                    class="row-span-2 md:row-span-3 max-h-96 ml-0 md:ml-4 lg:ml-0 mt-4 md:mt-0"
                     src={selectedCharacter()?.image}
                     loading="eager"
                     alt={`Charakterbild von ${selectedCharacter()?.prename} ${
