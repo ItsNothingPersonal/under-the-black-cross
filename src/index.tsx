@@ -7,7 +7,7 @@ import './index.css'
 
 render(
     () => (
-        <div class="md:container md:mx-auto prose prose-slate">
+        <div class="md:container md:mx-auto prose prose-slate px-4">
             <Router source={hashIntegration()}>
                 <Navbar />
                 <App />

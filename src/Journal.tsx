@@ -6,7 +6,7 @@ const Journal: Component = () => {
     return (
         <>
             <h1>Tagebuch des Klüngels</h1>
-            <div innerHTML={html} />
+            <div class="text-justify" innerHTML={html} />
         </>
     )
 }
