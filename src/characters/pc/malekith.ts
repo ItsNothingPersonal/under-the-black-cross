@@ -2,7 +2,7 @@ import { Clan } from 'enums/clan'
 import { Sex } from 'enums/sex'
 import { Status } from 'enums/status'
 import { CharacterInfo } from 'types/characterinfo'
-import img from './../../assets/Malekith.jpg'
+import img from './../../assets/Malekith.webp'
 
 export const malekith: CharacterInfo = {
     prename: 'Malekith',
