@@ -202,11 +202,11 @@ const Navbar: Component = () => {
                         </li>
                     </ul>
                 </div>
-                <li class="btn btn-ghost normal-case text-xl">
+                <div class="btn btn-ghost normal-case text-xl">
                     <Link class="no-underline" href="/">
                         Under The Black Cross
                     </Link>
-                </li>
+                </div>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
