@@ -1,6 +1,6 @@
 {
     "name": "under-the-black-cross",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "project page for the Vampire 20th Dark Ages Campaign 'Under the Black Cross'",
     "scripts": {
         "start": "vite",
