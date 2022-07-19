@@ -1,3 +1,13 @@
+#### 1.0.6 (2022-07-19)
+
+##### New Features
+
+-   **spotify:** added new spotify playlist (155af6b9)
+
+##### Bug Fixes
+
+-   **styling:** moved the left-most button (ee222858)
+
 #### 1.0.5 (2022-07-18)
 
 ##### New Features
