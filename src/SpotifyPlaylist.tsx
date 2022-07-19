@@ -9,18 +9,22 @@ const SpotifyPlaylist: Component = () => {
 
     const [spotifyIds] = createSignal<SpotifyPlaylistLink[]>([
         { name: 'Darkening Sky', id: '5mFf0a7cV4BiwrP0gNWy6r' },
+        {
+            name: 'Under The Black Cross',
+            id: '1f1iBunsUV2RxmaES3HPJ8',
+        },
     ])
 
     const [selectedId, setSelectedId] = createSignal<string>('')
 
-    onMount(() => setSelectedId(spotifyIds()[0].id))
+    onMount(() => setSelectedId(spotifyIds()[spotifyIds().length - 1].id))
 
     return (
         <div class="flex flex-col gap-2">
             <select
                 class="select select-bordered w-full max-w-xs"
-                disabled
                 onChange={(e) => setSelectedId(e.currentTarget.value)}
+                value={selectedId()}
             >
                 <For each={spotifyIds()}>
                     {(spotifyLink: SpotifyPlaylistLink) => {
