@@ -3,10 +3,10 @@ import { Component } from 'solid-js'
 
 const Navbar: Component = () => {
     return (
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 pl-0">
             <div class="navbar-start w-fit">
                 <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden pl-0">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5"
@@ -292,7 +292,7 @@ const Navbar: Component = () => {
                         </li>
                     </ul>
                 </div>
-                <div class="btn btn-ghost normal-case text-xl">
+                <div class="btn btn-ghost normal-case text-xl pl-0">
                     <Link class="no-underline" href="/">
                         Under The Black Cross
                     </Link>
