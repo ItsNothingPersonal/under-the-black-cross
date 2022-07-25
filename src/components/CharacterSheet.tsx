@@ -1,4 +1,5 @@
 import { npcSevillaDB } from 'characters/npc/npcSevillaDB'
+import { npcDB } from 'characters/npcDB'
 import { characterDB } from 'characters/pcDB'
 import { CharacterType } from 'enums/characterType'
 import { useLocation, useParams } from 'solid-app-router'
@@ -22,6 +23,9 @@ const CharacterSheet: Component = () => {
 
     createEffect(() => {
         switch (pathname()) {
+            case CharacterType.NPC_CURRENT:
+                setDB(npcDB)
+                break
             case CharacterType.NPC_SEVILLA:
                 setDB(npcSevillaDB)
                 break
@@ -86,7 +90,7 @@ export default CharacterSheet
 function parsePath(pathname: string): CharacterType {
     if (pathname.match(/^\/npc\/sevilla/)) {
         return CharacterType.NPC_SEVILLA
-    } else if (pathname.match(/^npc/)) {
+    } else if (pathname.match(/^\/npc/)) {
         return CharacterType.NPC_CURRENT
     }
 
