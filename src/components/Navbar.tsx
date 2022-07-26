@@ -138,9 +138,20 @@ const Navbar: Component = () => {
                                 class="menu dropdown-content p-2 shadow rounded-box w-72 mt-4 bg-secondary text-secondary-content"
                             >
                                 <li>
-                                    <a class="btn btn-ghost rounded-btn justify-start">
-                                        TDB!
-                                    </a>
+                                    <Link
+                                        class="btn btn-ghost rounded-btn justify-start"
+                                        href="/npc/von Hartz/Lucretia"
+                                    >
+                                        Lucretia von Hartz
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        class="btn btn-ghost rounded-btn justify-start"
+                                        href="/npc/von Verden/Jürgen"
+                                    >
+                                        Jürgen von Verden
+                                    </Link>
                                 </li>
                                 <li tabindex="0">
                                     <label
@@ -237,6 +248,14 @@ const Navbar: Component = () => {
                                                 href="/npc/sevilla/Vermudez/Mansuara"
                                             >
                                                 Mansuara Vermudez
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                class="btn btn-ghost rounded-btn justify-start"
+                                                href="/npc/sevilla/bermúdez/ibai"
+                                            >
+                                                Ibai Bermúdez
                                             </Link>
                                         </li>
                                     </ul>
@@ -383,12 +402,20 @@ const Navbar: Component = () => {
                             class="menu dropdown-content p-2 shadow rounded-box w-52 mt-4 bg-secondary text-secondary-content"
                         >
                             <li>
-                                <label
-                                    tabindex="0"
+                                <Link
                                     class="btn btn-ghost rounded-btn justify-start"
+                                    href="/npc/von Hartz/Lucretia"
                                 >
-                                    TDB!
-                                </label>
+                                    Lucretia von Hartz
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    class="btn btn-ghost rounded-btn justify-start"
+                                    href="/npc/von Verden/Jürgen"
+                                >
+                                    Jürgen von Verden
+                                </Link>
                             </li>
 
                             <li tabindex="0">
@@ -486,6 +513,14 @@ const Navbar: Component = () => {
                                             href="/npc/sevilla/Vermudez/Mansuara"
                                         >
                                             Mansuara Vermudez
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            class="btn btn-ghost rounded-btn justify-start"
+                                            href="/npc/sevilla/bermúdez/ibai"
+                                        >
+                                            Ibai Bermúdez
                                         </Link>
                                     </li>
                                 </ul>

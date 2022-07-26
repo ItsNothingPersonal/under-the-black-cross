@@ -18,6 +18,7 @@ const ExpHistory: Component = () => {
         { date: '13.06.2022', change: '+5' },
         { date: '27.06.2022', change: '+7' },
         { date: '11.07.2022', change: '+10' },
+        { date: '25.07.2022', change: '+4' },
     ])
     return (
         <div class="overflow-x-auto">

@@ -1,3 +1,22 @@
+#### 1.0.7 (2022-07-26)
+
+##### Chores
+
+-   **exp-history:** update exp history 25.07.2022 (de6c88f5)
+
+##### New Features
+
+-   **characters:**
+    -   updated character info (40e782b9)
+    -   added npc (6fee7a98)
+    -   npcs added (c880f8d8)
+
+##### Bug Fixes
+
+-   **journal:**
+    -   corrected journal entry (1bc528aa)
+    -   corrected years in the journal (63c2eea5)
+
 #### 1.0.6 (2022-07-19)
 
 ##### New Features
