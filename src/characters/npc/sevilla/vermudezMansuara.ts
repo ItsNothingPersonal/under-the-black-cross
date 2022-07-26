@@ -8,7 +8,7 @@ export const vermudezMansuara: CharacterInfo = {
     surname: 'Vermudez',
     clan: Clan.LASOMBRA,
     sex: Sex.FEMALE,
-    position: undefined,
+    position: 'Sultana von Sevilla',
     apparentAge: 25,
     image: undefined,
     generation: undefined,
