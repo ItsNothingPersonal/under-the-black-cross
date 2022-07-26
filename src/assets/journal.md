@@ -3,7 +3,7 @@ title: Journal
 description: Das Journal des Klüngels
 ---
 
-## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1210
 
 2 Nächte bis zur Sonnenfinsternis.
 
@@ -22,7 +22,7 @@ Ein ALBERTO stiftete die Armen zum Aufstand an (Maure, schwarze Haare, braqune a
 Um diesen ALBERTO anzulocken sang [Veronika](/character/Wanninger/Veronika) kritische lustige Lieder über die Obrigkeit ([Beispiel für die Lieder](https://www.youtube.com/watch?v=NtLGXc1A2jo)).
 Wir konnten damit ALBERTO aufspüren, der uns ein Lagerhaus verriet, in das er leute "entführte".
 
-## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1210
 
 3 Nächte bis zur Sonnenfinsternis.
 
