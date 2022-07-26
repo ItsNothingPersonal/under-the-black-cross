@@ -3,7 +3,7 @@ title: Journal
 description: Das Journal des Klüngels
 ---
 
-## Aus dem Reisetagebuch von Karl Friedrich von Klöden 05.12.1211
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden vom 05.12.1211
 Heute erreichen wir nach langer mühsamer Reise auf Einladung von Lord [JÜRGEN](/npc/von%20Verden/Jürgen) Magdeburg.
 [LUCRETIA VON HARTZ](/npc/von%20Hartz/Lucretia) war so gütig uns herzlich zu empfangen, und uns Quartiere in Lord Jürgens Burg zur Verfügung zu stellen.
 
@@ -22,6 +22,11 @@ An dieser Stelle ist ein Pergament mit dem Siegel von Lord JÜRGEN in das Tagebu
 > Jürgen von Verden  
 > Kind von Hardestadt  
 
+
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1210
+Nach den Unruhen der Soinnenfinstrernis blieben wir ncoh einige Monate in Sevilla.
+[NASHWA BINT MUKHTAR](/npc/sevilla/bint%20Mukhtar/Nashwa)) trat die Nachfolge als Sultana an, Ihre Herrschaft ist aber geschwächt, ich glaube es könnte den  Kräften unseres Herrn in den nächsten Jahren gelingen die Stadt zurück zu erobern.
+Um dieses weiter voran zu treiben unterstützten wir [IBAI BERMÚDEZ], einen Toreador von der Blutroten Kurie, sich in Sevilla zu etablieren.
 
 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1210
