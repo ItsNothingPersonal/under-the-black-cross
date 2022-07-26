@@ -3,6 +3,33 @@ title: Journal
 description: Das Journal des Klüngels
 ---
 
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden vom 05.12.1211
+
+Heute erreichen wir nach langer mühsamer Reise auf Einladung von Lord [JÜRGEN](/npc/von%20Verden/Jürgen) Magdeburg.
+[LUCRETIA VON HARTZ](/npc/von%20Hartz/Lucretia) war so gütig uns herzlich zu empfangen, und uns Quartiere in Lord Jürgens Burg zur Verfügung zu stellen.
+
+An dieser Stelle ist ein Pergament mit dem Siegel von Lord JÜRGEN in das Tagebuch eingelegt.
+
+> Gott zum Gruße Herr von Klöden,
+>
+> Ich habe von Euren Erfolgen in der Mußelmanenstadt in Spanien gehört. Ihr habt den Einfluss dieser Heiden deutlich eingedämmt und nebenbei auch den Magistern einen erheblichen Schlag versetzt. Ich gedenke Eure Fähigkeiten zu gegebener Stunde zu nutzen, seid Euch dessen gewiss. Als Euer Erzeuger gebe ich Euch zudem einen gut gemeinten Rat: Versteht den unvermeidbaren Zorn dieser Leute als einen Orden und beugt Euch nicht vor den Repressalien, die Euch erwarten mögen! Ihr habt zweifelsohne das Richtige getan und in einer schweren Stunde das Rückgrat bewiesen, das unserem Blute allgemein zugeschrieben wird!
+>
+> Als Zeichen meiner Anerkennung Eurer Erfolge erwarte ich Euch wie auch Euere Entourage Anfang Dezember diesen Jahres in Magdeburg. Ich habe mich entschlossen, dort meine Domäne zu errichten und werde dies angemessen mit Gästen aus allen Teilen des Reiches und darüber hinaus feiern.
+>
+> Macht Euch als mein Nachkomme keine Illusionen: Obgleich ich annehmen möchte, dass alle Gäste ein freundliches Lächeln vor sich her tragen werden, so bin ich mir sicher, dass ein jeder seine eigenen Pläne und Machenschaften mit sich bringt. Wir werden sehen, auf wen Verlass ist und auf wessen Schultern ich die Teile der Verantwortung der großen Dinge, die vor uns liegen, übertragen kann und von wem man sich besser trennt. Ich bin mir sicher, Ihr werdet mich in dieser Frage nicht enttäuschen.
+>
+> Ich wünsche Euch Gottes Segen auf der langen Reise zurück ins Reich.
+>
+> Gegeben am 29. Juni im Jahr des Herrn 1211  
+> Jürgen von Verden  
+> Kind von Hardestadt
+
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1210
+
+Nach den Unruhen der Sonnenfinstrernis blieben wir noch einige Monate in Sevilla.
+[MANSUARA VERMUDEZ](/npc/sevilla/vermudez/mansuara) trat die Nachfolge als Sultana an, Ihre Herrschaft ist aber geschwächt, ich glaube es könnte den Kräften unseres Herrn in den nächsten Jahren gelingen die Stadt zurück zu erobern.
+Um dieses weiter voran zu treiben unterstützten wir [IBAI BERMÚDEZ](/npc/sevilla/bermúdez/ibai), einen Toreador von der Blutroten Kurie, sich in Sevilla zu etablieren.
+
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1210
 
 2 Nächte bis zur Sonnenfinsternis.

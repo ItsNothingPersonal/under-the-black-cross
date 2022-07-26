@@ -1,4 +1,5 @@
 import { CharacterInfo } from 'types/characterinfo'
+import { bermúdezIbai } from './sevilla/bermúdezIbai'
 import { bintAliyyahElisheba } from './sevilla/bintAliyyahElisheba'
 import { bintJifriAshiqa } from './sevilla/bintJifriAshiqa'
 import { bintMukhtarNashwa } from './sevilla/bintMukhtarNashwa'
@@ -21,4 +22,5 @@ export const npcSevillaDB = new Map<string, CharacterInfo>([
     ['ibn faiz_hassan', ibnFaizHassan],
     ['undefined_mirabelle', mirabelle],
     ['vermudez_mansuara', vermudezMansuara],
+    ['bermúdez_ibai', bermúdezIbai],
 ])

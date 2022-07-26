@@ -250,6 +250,14 @@ const Navbar: Component = () => {
                                                 Mansuara Vermudez
                                             </Link>
                                         </li>
+                                        <li>
+                                            <Link
+                                                class="btn btn-ghost rounded-btn justify-start"
+                                                href="/npc/sevilla/bermúdez/ibai"
+                                            >
+                                                Ibai Bermúdez
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -505,6 +513,14 @@ const Navbar: Component = () => {
                                             href="/npc/sevilla/Vermudez/Mansuara"
                                         >
                                             Mansuara Vermudez
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            class="btn btn-ghost rounded-btn justify-start"
+                                            href="/npc/sevilla/bermúdez/ibai"
+                                        >
+                                            Ibai Bermúdez
                                         </Link>
                                     </li>
                                 </ul>
