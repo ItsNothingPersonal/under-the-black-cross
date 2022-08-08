@@ -3,12 +3,20 @@ title: Journal
 description: Das Journal des Klüngels
 ---
 
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden vom 06.12.1211
+Ein weiterer Gast in Magdeburg ist CARA vom Clan Tzimisce, die Gesandte des VLADIMIR dem Voyvoden.
+Bei Hofe viel mir [MYCA VYCOS](npc/Vycos/Myca), ein Tzimisce aus Constantinopel auf.
+Auch der Baron [HEINRICH VON ACHERN](npc/von%20Achern/Heinrich) war natürlich da.
+als Gesandte der Höfe der Liebe war ROSAMUND VON ISLINGTON anwesend.
+
+
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden vom 05.12.1211
 
 Heute erreichen wir nach langer mühsamer Reise auf Einladung von Lord [JÜRGEN](/npc/von%20Verden/Jürgen) Magdeburg.
-[LUCRETIA VON HARTZ](/npc/von%20Hartz/Lucretia) war so gütig uns herzlich zu empfangen, und uns Quartiere in Lord Jürgens Burg zur Verfügung zu stellen.
+[LUCRETIA VON HARTZ](/npc/von%20Hartz/Lucretia) war so gütig uns herzlich zu empfangen, und uns Quartiere in Lord Jürgens Burg zur Verfügung zu stellen. Unser Tross lagert vor der Stadt, in welcher schon zahlreiche Gäste angereist waren.
+Die Stadt scheint unter der Kontrolle des deutschen Ordens zu stehen.
 
-An dieser Stelle ist ein Pergament mit dem Siegel von Lord JÜRGEN in das Tagebuch eingelegt.
+An dieser Stelle ist ein Pergament mit dem Siegel von Lord [JÜRGEN](/npc/von%20Verden/Jürgen) in das Tagebuch eingelegt.
 
 > Gott zum Gruße Herr von Klöden,
 >
