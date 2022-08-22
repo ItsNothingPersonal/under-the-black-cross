@@ -8,7 +8,7 @@ Ein weiterer Gast in Magdeburg ist [KARA VLASZY LUPESCU](npc/Vlaszy%20Lupescu/Ka
 Bei Hofe viel mir [MYCA VYCOS](npc/Vycos/Myca), ein Tzimisce aus Constantinopel auf.
 Auch der Baron [HEINRICH VON ACHERN](npc/von%20Achern/Heinrich) war natürlich da.
 Als Gesandte der Höfe der Liebe war [ROSAMUND VON ISLINGTON](/npc/von%20Islington/Rosamund) anwesend, sie schenkte Lord [JÜRGEN](/npc/von%20Verden/Jürgen) ein aufwändig gestaltetes Schwert.
-HEINRICH VON ACHERN überbrachte die Nachricht aus Ungarn, das die dortigen Ventrue JÜRGEN als Ihrern Herrscher und Verteidiger gegen die Voivoden einladen.
+HEINRICH VON ACHERN überbrachte die Nachricht aus Ungarn, das die dortigen Ventrue JÜRGEN als Ihrern Herrscher und Verteidiger gegen die Voyvoden einladen.
 Daraufhin kam es zum Eklat zwischen KARA und Lord JÜRGEN.
 KARA reiste daraufhin überstürzt ab.
 
