@@ -12,6 +12,7 @@ HEINRICH VON ACHERN überbrachte die Nachricht aus Ungarn, das die dortigen Vent
 Daraufhin kam es zum Eklat zwischen KARA und Lord JÜRGEN.
 KARA reiste daraufhin überstürzt ab.
 Auch wurde das Fest von [MORROW](/npc/Morrow) unterbrochen, welche Lord JÜRGEN warnte sich nicht in Transylvanien niederzulassen.
+[JERVAIS BANI TREMERE](/npc/bani%20Tremere/Jervais) analysierte einige Gegenstände mittels Weissagungsmagie und fand heraus das das Schwert eine Fälschung ist.
 
 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden vom 05.12.1211
