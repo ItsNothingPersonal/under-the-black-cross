@@ -153,6 +153,38 @@ const Navbar: Component = () => {
                                         Jürgen von Verden
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link
+                                        class="btn btn-ghost rounded-btn justify-start"
+                                        href="/npc/Vlaszy Lupescu/Kara"
+                                    >
+                                        Kara Vlaszy Lupescu
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        class="btn btn-ghost rounded-btn justify-start"
+                                        href="/npc/Of Islington/Rosamund"
+                                    >
+                                        Rosamund Of Islington
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        class="btn btn-ghost rounded-btn justify-start"
+                                        href="/npc/von Achern/Heinrich"
+                                    >
+                                        Heinrich von Achern
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        class="btn btn-ghost rounded-btn justify-start"
+                                        href="/npc/Vykos/Myca"
+                                    >
+                                        Myca Vykos
+                                    </Link>
+                                </li>
                                 <li tabindex="0">
                                     <label
                                         tabindex="0"
@@ -415,6 +447,38 @@ const Navbar: Component = () => {
                                     href="/npc/von Verden/Jürgen"
                                 >
                                     Jürgen von Verden
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    class="btn btn-ghost rounded-btn justify-start"
+                                    href="/npc/Vlaszy Lupescu/Kara"
+                                >
+                                    Kara Vlaszy Lupescu
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    class="btn btn-ghost rounded-btn justify-start"
+                                    href="/npc/Of Islington/Rosamund"
+                                >
+                                    Rosamund Of Islington
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    class="btn btn-ghost rounded-btn justify-start"
+                                    href="/npc/von Achern/Heinrich"
+                                >
+                                    Heinrich von Achern
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    class="btn btn-ghost rounded-btn justify-start"
+                                    href="/npc/Vykos/Myca"
+                                >
+                                    Myca Vykos
                                 </Link>
                             </li>
 
