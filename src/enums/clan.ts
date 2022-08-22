@@ -12,4 +12,5 @@ export enum Clan {
     ASSAMITE_SORCERER = 'Assamite Sorcerer',
     LASOMBRA_ANGELLIS_ATER = 'Lasombra - Angellis Ater',
     BAALI = 'Baali',
+    TZIMISCE = 'Tzimisce',
 }
