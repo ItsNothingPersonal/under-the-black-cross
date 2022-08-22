@@ -4,14 +4,14 @@ description: Das Journal des Klüngels
 ---
 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden vom 06.12.1211
-Ein weiterer Gast in Magdeburg ist [KARA VLASZY LUPESCU](npc/Vlaszy%20Lupescu/Kara) vom Clan Tzimisce, die Gesandte des VLADIMIR dem Voyvoden.
-Bei Hofe viel mir [MYCA VYCOS](npc/Vycos/Myca), ein Tzimisce aus Constantinopel auf.
-Auch der Baron [HEINRICH VON ACHERN](npc/von%20Achern/Heinrich) war natürlich da.
+Ein weiterer Gast in Magdeburg ist [KARA VLASZY LUPESCU](/npc/Vlaszy%20Lupescu/Kara) vom Clan Tzimisce, die Gesandte des VLADIMIR dem Voyvoden.
+Bei Hofe viel mir [MYCA VYCOS](/npc/Vycos/Myca), ein Tzimisce aus Constantinopel auf.
+Auch der Baron [HEINRICH VON ACHERN](/npc/von%20Achern/Heinrich) war natürlich da.
 Als Gesandte der Höfe der Liebe war [ROSAMUND VON ISLINGTON](/npc/von%20Islington/Rosamund) anwesend, sie schenkte Lord [JÜRGEN](/npc/von%20Verden/Jürgen) ein aufwändig gestaltetes Schwert.
-HEINRICH VON ACHERN überbrachte die Nachricht aus Ungarn, das die dortigen Ventrue JÜRGEN als Ihrern Herrscher und Verteidiger gegen die Voyvoden einladen.
+HEINRICH VON ACHERN überbrachte die Nachricht aus Ungarn, das die dortigen Ventrue Lord JÜRGEN als Ihren Herrscher und Verteidiger gegen die Voyvoden einladen.
 Daraufhin kam es zum Eklat zwischen KARA und Lord JÜRGEN.
 KARA reiste daraufhin überstürzt ab.
-
+Auch wurde das Fest von [MORROW](/npc/Morrow) unterbrochen, welche Lord JÜRGEN warnte sich nicht in Transylvanien niederzulassen.
 
 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden vom 05.12.1211
