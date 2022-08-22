@@ -1,3 +1,13 @@
+#### 1.0.8 (2022-08-22)
+
+##### Chores
+
+-   **exp-history:** update exp history 08.08.2022 (fbea0344)
+
+##### New Features
+
+-   **characters:** added npcs (d40c73a0)
+
 #### 1.0.7 (2022-07-26)
 
 ##### Chores
