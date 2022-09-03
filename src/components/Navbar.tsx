@@ -1,7 +1,49 @@
+import { StorySource } from 'enums/storySource'
+import { getNonPlayerCharacters } from 'services/nonPlayerCharacterService'
+import { getPlayerCharacters } from 'services/playerService'
 import { Link } from 'solid-app-router'
-import { Component } from 'solid-js'
+import { Component, createSignal, onMount } from 'solid-js'
+import { For } from 'solid-js/web'
+import { NonPlayerCharacter } from 'types/nonPlayerCharacter'
+import { PlayerCharacter } from 'types/playerCharacter'
+import PlayerMenuEntry from './PlayerMenuEntry'
 
 const Navbar: Component = () => {
+    const [localPlayerCharacters, setLocalPlayerCharacters] = createSignal<
+        PlayerCharacter[]
+    >([])
+
+    const [
+        localNonPlayerCharactersUnderTheBlackCross,
+        setLocalNonPlayerCharactersUnderTheBlackCross,
+    ] = createSignal<NonPlayerCharacter[]>([])
+
+    const [
+        localNonPlayerCharactersSevilla,
+        setLocalNonPlayerCharactersSevilla,
+    ] = createSignal<NonPlayerCharacter[]>([])
+
+    onMount(async () => {
+        const allPlayerCharacters = [...(await getPlayerCharacters()).values()]
+        setLocalPlayerCharacters(allPlayerCharacters)
+
+        const allNonPlayerCharactersUnderTheBlackCross = [
+            ...(
+                await getNonPlayerCharacters(StorySource.UNDER_THE_BLACK_CROSS)
+            ).values(),
+        ].filter(
+            (item) => item.storySource === StorySource.UNDER_THE_BLACK_CROSS
+        )
+        setLocalNonPlayerCharactersUnderTheBlackCross(
+            allNonPlayerCharactersUnderTheBlackCross
+        )
+
+        const allNonPlayerCharactersUnderSevilla = [
+            ...(await getNonPlayerCharacters(StorySource.SEVILLA)).values(),
+        ].filter((item) => item.storySource === StorySource.SEVILLA)
+        setLocalNonPlayerCharactersSevilla(allNonPlayerCharactersUnderSevilla)
+    })
+
     return (
         <div class="navbar bg-base-100 pl-0">
             <div class="navbar-start w-fit">
@@ -43,54 +85,13 @@ const Navbar: Component = () => {
                                 </svg>
                             </label>
                             <ul class="p-2 z-10 bg-secondary text-secondary-content">
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/character/von Klöden/Karl Friedrich"
-                                    >
-                                        Karl Friedrich von Klöden
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/character/Borgione/Lucretia"
-                                    >
-                                        Lucretia Borgione
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/character/Wanninger/Veronika"
-                                    >
-                                        Veronika Wanninger
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/character//Ulrich"
-                                    >
-                                        Ulrich
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/character//Malekith"
-                                    >
-                                        Malekith
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/character/Giovani de Florence/Bonefacio"
-                                    >
-                                        Bonefacio Giovani de Florence
-                                    </Link>
-                                </li>
+                                <For each={localPlayerCharacters()}>
+                                    {(playerCharacter: PlayerCharacter) => (
+                                        <PlayerMenuEntry
+                                            character={playerCharacter}
+                                        />
+                                    )}
+                                </For>
                             </ul>
                         </li>
                         <li>
@@ -137,54 +138,17 @@ const Navbar: Component = () => {
                                 tabindex="0"
                                 class="menu dropdown-content p-2 shadow rounded-box w-72 mt-4 bg-secondary text-secondary-content"
                             >
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/npc/von Hartz/Lucretia"
-                                    >
-                                        Lucretia von Hartz
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/npc/von Verden/Jürgen"
-                                    >
-                                        Jürgen von Verden
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/npc/Vlaszy Lupescu/Kara"
-                                    >
-                                        Kara Vlaszy Lupescu
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/npc/Of Islington/Rosamund"
-                                    >
-                                        Rosamund Of Islington
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/npc/von Achern/Heinrich"
-                                    >
-                                        Heinrich von Achern
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        class="btn btn-ghost rounded-btn justify-start"
-                                        href="/npc/Vykos/Myca"
-                                    >
-                                        Myca Vykos
-                                    </Link>
-                                </li>
+                                <For
+                                    each={localNonPlayerCharactersUnderTheBlackCross()}
+                                >
+                                    {(
+                                        nonPlayerCharacter: NonPlayerCharacter
+                                    ) => (
+                                        <PlayerMenuEntry
+                                            character={nonPlayerCharacter}
+                                        />
+                                    )}
+                                </For>
                                 <li tabindex="0">
                                     <label
                                         tabindex="0"
@@ -202,94 +166,19 @@ const Navbar: Component = () => {
                                         </svg>
                                     </label>
                                     <ul class="menu menu-vertical bw-56 p-2 rounded-box bg-secondary text-secondary-content">
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla/bint Aliyyah/Elisheba"
-                                            >
-                                                Elisheba bint Aliyyah
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla/bint Jifri/Ashiqa"
-                                            >
-                                                Ashiqa bint Jifri
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla/bint Mukhtar/Nashwa"
-                                            >
-                                                Nashwa bint Mukhtar
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla/bint Yoav/Gerushah"
-                                            >
-                                                Gerushah bint Yoav
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla/de Landa/Alfonso"
-                                            >
-                                                Alfonso de Landa
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla/de Toledo/Ordonio"
-                                            >
-                                                Ordonio de Toledo
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla//gotzon"
-                                            >
-                                                Gotzon
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla/Ibn Faiz/Hassan"
-                                            >
-                                                Hassan Ibn Faiz
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla//Mirabelle"
-                                            >
-                                                Mirabelle
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla/Vermudez/Mansuara"
-                                            >
-                                                Mansuara Vermudez
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                class="btn btn-ghost rounded-btn justify-start"
-                                                href="/npc/sevilla/bermúdez/ibai"
-                                            >
-                                                Ibai Bermúdez
-                                            </Link>
-                                        </li>
+                                        <For
+                                            each={localNonPlayerCharactersSevilla()}
+                                        >
+                                            {(
+                                                nonPlayerCharacter: NonPlayerCharacter
+                                            ) => (
+                                                <PlayerMenuEntry
+                                                    character={
+                                                        nonPlayerCharacter
+                                                    }
+                                                />
+                                            )}
+                                        </For>
                                     </ul>
                                 </li>
                             </ul>
@@ -359,54 +248,13 @@ const Navbar: Component = () => {
                             tabindex="0"
                             class="menu dropdown-content p-2 shadow rounded-box w-72 mt-4 bg-secondary text-secondary-content"
                         >
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/character/von Klöden/Karl Friedrich"
-                                >
-                                    Karl Friedrich von Klöden
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/character/Borgione/Lucretia"
-                                >
-                                    Lucretia Borgione
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/character/Wanninger/Veronika"
-                                >
-                                    Veronika Wanninger
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/character//Ulrich"
-                                >
-                                    Ulrich
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/character//Malekith"
-                                >
-                                    Malekith
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/character/Giovani de Florence/Bonefacio"
-                                >
-                                    Bonefacio Giovani de Florence
-                                </Link>
-                            </li>
+                            <For each={localPlayerCharacters()}>
+                                {(playerCharacter: PlayerCharacter) => (
+                                    <PlayerMenuEntry
+                                        character={playerCharacter}
+                                    />
+                                )}
+                            </For>
                         </ul>
                     </div>
 
@@ -433,54 +281,15 @@ const Navbar: Component = () => {
                             tabindex="0"
                             class="menu dropdown-content p-2 shadow rounded-box w-52 mt-4 bg-secondary text-secondary-content"
                         >
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/npc/von Hartz/Lucretia"
-                                >
-                                    Lucretia von Hartz
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/npc/von Verden/Jürgen"
-                                >
-                                    Jürgen von Verden
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/npc/Vlaszy Lupescu/Kara"
-                                >
-                                    Kara Vlaszy Lupescu
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/npc/Of Islington/Rosamund"
-                                >
-                                    Rosamund Of Islington
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/npc/von Achern/Heinrich"
-                                >
-                                    Heinrich von Achern
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    class="btn btn-ghost rounded-btn justify-start"
-                                    href="/npc/Vykos/Myca"
-                                >
-                                    Myca Vykos
-                                </Link>
-                            </li>
+                            <For
+                                each={localNonPlayerCharactersUnderTheBlackCross()}
+                            >
+                                {(nonPlayerCharacter: NonPlayerCharacter) => (
+                                    <PlayerMenuEntry
+                                        character={nonPlayerCharacter}
+                                    />
+                                )}
+                            </For>
 
                             <li tabindex="0">
                                 <label
@@ -499,94 +308,17 @@ const Navbar: Component = () => {
                                     </svg>
                                 </label>
                                 <ul class="menu menu-vertical w-56 p-2 rounded-box bg-secondary text-secondary-content">
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla/bint Aliyyah/Elisheba"
-                                        >
-                                            Elisheba bint Aliyyah
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla/bint Jifri/Ashiqa"
-                                        >
-                                            Ashiqa bint Jifri
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla/bint Mukhtar/Nashwa"
-                                        >
-                                            Nashwa bint Mukhtar
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla/bint Yoav/Gerushah"
-                                        >
-                                            Gerushah bint Yoav
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla/de Landa/Alfonso"
-                                        >
-                                            Alfonso de Landa
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla/de Toledo/Ordonio"
-                                        >
-                                            Ordonio de Toledo
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla//gotzon"
-                                        >
-                                            Gotzon
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla/Ibn Faiz/Hassan"
-                                        >
-                                            Hassan Ibn Faiz
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla//Mirabelle"
-                                        >
-                                            Mirabelle
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla/Vermudez/Mansuara"
-                                        >
-                                            Mansuara Vermudez
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            class="btn btn-ghost rounded-btn justify-start"
-                                            href="/npc/sevilla/bermúdez/ibai"
-                                        >
-                                            Ibai Bermúdez
-                                        </Link>
-                                    </li>
+                                    <For
+                                        each={localNonPlayerCharactersSevilla()}
+                                    >
+                                        {(
+                                            nonPlayerCharacter: NonPlayerCharacter
+                                        ) => (
+                                            <PlayerMenuEntry
+                                                character={nonPlayerCharacter}
+                                            />
+                                        )}
+                                    </For>
                                 </ul>
                             </li>
                         </ul>
