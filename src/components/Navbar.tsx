@@ -279,7 +279,7 @@ const Navbar: Component = () => {
                         </label>
                         <ul
                             tabindex="0"
-                            class="menu dropdown-content p-2 shadow rounded-box w-52 mt-4 bg-secondary text-secondary-content"
+                            class="menu dropdown-content p-2 shadow rounded-box w-60 mt-4 bg-secondary text-secondary-content"
                         >
                             <For
                                 each={localNonPlayerCharactersUnderTheBlackCross()}
