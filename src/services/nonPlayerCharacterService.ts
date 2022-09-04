@@ -31,6 +31,7 @@ const fetchAllNonPlayerCharacters = async (
                         status: Status.PUBLISHED,
                         storySource,
                     },
+                    sort: ['prename'],
                 })
                 .then(async (response) => {
                     return (response.data as NonPlayerCharacterDirectus[]).map(

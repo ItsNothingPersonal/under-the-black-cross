@@ -27,6 +27,7 @@ const fetchAllPlayerCharacters = async (): Promise<PlayerCharacter[]> => {
                         status: Status.PUBLISHED,
                         characterStatus: CharacterStatus.ACTIVE,
                     },
+                    sort: ['prename'],
                 })
                 .then(async (response) =>
                     (response.data as PlayerCharacterDirectus[]).map(
