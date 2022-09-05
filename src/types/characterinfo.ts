@@ -1,17 +1,17 @@
-import { Clan } from 'enums/clan'
+import { CharacterStatus } from 'enums/characterStatus'
+import { ClanName } from 'enums/clan'
 import { Sex } from 'enums/sex'
-import { Status } from 'enums/status'
 
 export interface CharacterInfo {
     prename: string
     surname: string
     sex: Sex
-    clan: Clan
+    clan: ClanName
     position: string | undefined
     apparentAge: string | number | undefined
     image: string | undefined
     generation: number | undefined
-    status: Status
+    status: CharacterStatus
     embrace: string | undefined
     sire: { prename: string; surname: string } | undefined
 }

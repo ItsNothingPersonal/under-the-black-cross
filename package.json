@@ -17,6 +17,7 @@
         "@commitlint/cli": "^17.0.3",
         "@commitlint/config-conventional": "^17.0.3",
         "@tailwindcss/typography": "^0.5.4",
+        "@types/luxon": "^3.0.1",
         "@typescript-eslint/eslint-plugin": "^5.30.6",
         "@typescript-eslint/parser": "^5.30.6",
         "autoprefixer": "^10.4.7",
@@ -31,12 +32,14 @@
         "tailwindcss": "^3.1.6",
         "typescript": "^4.6.4",
         "vite": "^2.9.9",
-        "vite-plugin-markdown": "^2.0.2",
         "vite-plugin-solid": "^2.2.6",
         "vite-tsconfig-paths": "^3.5.0"
     },
     "dependencies": {
+        "@directus/sdk": "^10.1.4",
+        "luxon": "^3.0.3",
         "solid-app-router": "^0.4.1",
-        "solid-js": "^1.4.2"
+        "solid-js": "^1.4.2",
+        "solid-markdown": "^1.2.0"
     }
 }

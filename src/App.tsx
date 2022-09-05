@@ -1,14 +1,14 @@
+import CharacterSheet from 'components/CharacterSheet'
 import { useRoutes } from 'solid-app-router'
-import type { Component } from 'solid-js'
-import Journal from './Journal'
-import Home from './Home'
+import { Component } from 'solid-js'
 import ExpHistory from './ExpHistory'
+import Home from './Home'
+import Impressum from './Impressum'
+import Journal from './Journal'
 import DiceAndDifficulties from './rules-infos/DiceAndDifficulties'
 import FrenzyAndRoetschreck from './rules-infos/FrenzyAndRoetschreck'
 import RoadsAndDegeneration from './rules-infos/RoadsAndDegeneration'
 import SpotifyPlaylist from './SpotifyPlaylist'
-import Impressum from './Impressum'
-import CharacterSheet from 'components/CharacterSheet'
 
 const routes = [
     {
