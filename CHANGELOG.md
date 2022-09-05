@@ -1,3 +1,15 @@
+### 1.1.0 (2022-09-05)
+
+##### Chores
+
+-   **design:** adjusted npc menu width on desktop version (b512a3d0)
+-   **deps:** removing unnecessary dependencies (589ccec2)
+
+##### New Features
+
+-   **sorting:** changed player and npc sorting (3251a5d4)
+-   **directus:** moved data to directus (b9eee109)
+
 #### 1.0.8 (2022-08-22)
 
 ##### Chores

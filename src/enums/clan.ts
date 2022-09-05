@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-export enum Clan {
+export enum ClanName {
     VENTRUE = 'Ventrue',
     TOREADOR = 'Toreador',
     TREMERE = 'Tremere',
