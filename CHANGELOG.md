@@ -1,3 +1,20 @@
+### 1.2.0 (2022-09-12)
+
+##### New Features
+
+-   **exp-history:** added exp sum counter (59564f34)
+-   **directus:** moved road data to directus (a4c212b4)
+
+##### Other Changes
+
+-   feature/add-exphistory-sumtotal (a4788c9a)
+-   feature/move-roads-to-directus (1b8bc4fe)
+
+##### Refactors
+
+-   **navbar:** splitted up navbar component (40a3e7c0)
+-   **file-name:** renamed file (26a71160)
+
 ### 1.1.0 (2022-09-05)
 
 ##### Chores
