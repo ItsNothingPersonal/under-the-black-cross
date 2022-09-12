@@ -1,5 +1,5 @@
 import { CharacterStatus } from 'enums/characterStatus'
-import { ClanName } from 'enums/clan'
+import { ClanName } from 'enums/clanName'
 import { Sex } from 'enums/sex'
 
 export interface CharacterInfo {

@@ -21,7 +21,7 @@ const PlayerMenuEntry: Component<{
         }/${props.character.surname ?? ''}/${props.character.prename}`
 
     return (
-        <li>
+        <li class="pl-0">
             <Link class="btn btn-ghost rounded-btn justify-start" href={link()}>
                 {props.character.prename} {props.character.surname ?? ''}
             </Link>

@@ -1,10 +1,12 @@
-import { ClanName } from 'enums/clanName'
 import { DateTime } from 'luxon'
 
-export interface Clan {
+export interface RoadInformation {
     id: number
     date_created?: DateTime
     date_updated?: DateTime
     status: string
-    name: ClanName
+    name: number
+    score: number
+    minimumWrongdoing: string
+    rationale: string
 }

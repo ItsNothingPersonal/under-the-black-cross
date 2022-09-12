@@ -1,14 +1,17 @@
 import { CharacterStatus } from 'enums/characterStatus'
-import { ClanName } from 'enums/clan'
+import { ClanName } from 'enums/clanName'
+import { RoadName } from 'enums/roadName'
 import { Status } from 'enums/status'
 import { createSignal } from 'solid-js'
 import { PlayerCharacter } from 'types/playerCharacter'
 import { PlayerCharacterDirectus } from 'types/playerCharacterDirectus'
 import { getClans } from './clanService'
 import { getDirectus, getDirectusConnection } from './directusService'
+import { getRoads } from './roadService'
 
 const [playerCharacters] = createSignal<Map<string, PlayerCharacter>>(new Map())
 const availableClans = await getClans()
+const availableRoads = await getRoads()
 
 const fetchAllPlayerCharacters = async (): Promise<PlayerCharacter[]> => {
     const directus = getDirectus()
@@ -72,6 +75,8 @@ const getPlayerCharacterByName = (
 const mapServerToClient = (
     playerServer: PlayerCharacterDirectus
 ): PlayerCharacter => {
+    const road = availableRoads.get(playerServer.road)
+
     let playerCharacter: PlayerCharacter = {
         prename: playerServer.prename,
         surname: playerServer.surname,
@@ -88,7 +93,9 @@ const mapServerToClient = (
         generation: playerServer.generation,
         position: playerServer.position,
         sex: playerServer.sex,
-        sire: playerServer.sire,
+        road: road ? (road.name as RoadName) : undefined,
+        sire_prename: playerServer.sire_prename,
+        sire_surname: playerServer.sire_surname,
     }
 
     return playerCharacter
