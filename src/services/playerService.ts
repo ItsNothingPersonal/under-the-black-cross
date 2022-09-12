@@ -1,5 +1,5 @@
 import { CharacterStatus } from 'enums/characterStatus'
-import { ClanName } from 'enums/clan'
+import { ClanName } from 'enums/clanName'
 import { Status } from 'enums/status'
 import { createSignal } from 'solid-js'
 import { PlayerCharacter } from 'types/playerCharacter'

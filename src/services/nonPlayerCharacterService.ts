@@ -1,4 +1,4 @@
-import { ClanName } from 'enums/clan'
+import { ClanName } from 'enums/clanName'
 import { Status } from 'enums/status'
 import { StorySource } from 'enums/storySource'
 import { createSignal } from 'solid-js'

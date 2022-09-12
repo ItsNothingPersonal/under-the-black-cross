@@ -1,4 +1,4 @@
-import { ClanName } from 'enums/clan'
+import { ClanName } from 'enums/clanName'
 import { DateTime } from 'luxon'
 
 export interface Clan {
