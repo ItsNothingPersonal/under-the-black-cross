@@ -1,6 +1,7 @@
 import { StorySource } from 'enums/storySource'
 import { getNonPlayerCharacters } from 'services/nonPlayerCharacterService'
 import { getPlayerCharacters } from 'services/playerService'
+import { getRoads } from 'services/roadService'
 import { Link } from 'solid-app-router'
 import { Component, createSignal, onMount } from 'solid-js'
 import { For } from 'solid-js/web'
@@ -29,6 +30,8 @@ const Navbar: Component = () => {
         setLocalNonPlayerCharactersSevilla,
     ] = createSignal<NonPlayerCharacter[]>([])
 
+    const [localRoadNames, setLocalRoadNames] = createSignal<string[]>([])
+
     onMount(async () => {
         const allPlayerCharacters = [...(await getPlayerCharacters()).values()]
         setLocalPlayerCharacters(allPlayerCharacters)
@@ -48,6 +51,9 @@ const Navbar: Component = () => {
             ...(await getNonPlayerCharacters(StorySource.SEVILLA)).values(),
         ].filter((item) => item.storySource === StorySource.SEVILLA)
         setLocalNonPlayerCharactersSevilla(allNonPlayerCharactersUnderSevilla)
+
+        const allRoadNames = [...(await getRoads()).values()]
+        setLocalRoadNames(allRoadNames.map((e) => e.name))
     })
 
     return (
@@ -119,14 +125,28 @@ const Navbar: Component = () => {
                             Frenzy & Roetschreck
                         </Link>
                     </MenuButtonMobile>
-                    <MenuButtonMobile>
-                        <Link
-                            class="btn btn-ghost rounded-btn justify-start"
-                            href="/rules-info/roads-and-degeneration"
-                        >
-                            Roads & Degeneration
-                        </Link>
-                    </MenuButtonMobile>
+                    <SubMenuButtonMobile label="Roads & Degeneration">
+                        <MenuButtonMobile>
+                            <Link
+                                class="btn btn-ghost rounded-btn justify-start"
+                                href="/rules-info/degeneration"
+                            >
+                                Degeneration
+                            </Link>
+                        </MenuButtonMobile>
+                        <For each={localRoadNames()}>
+                            {(roadName: string) => (
+                                <MenuButtonMobile>
+                                    <Link
+                                        class="btn btn-ghost rounded-btn justify-start"
+                                        href={`/rules-info/road/${roadName}`}
+                                    >
+                                        {roadName}
+                                    </Link>
+                                </MenuButtonMobile>
+                            )}
+                        </For>
+                    </SubMenuButtonMobile>
                 </SubMenuButtonMobile>
 
                 <MenuButtonMobile>
@@ -193,12 +213,24 @@ const Navbar: Component = () => {
                     >
                         Frenzy & Roetschreck
                     </Link>
-                    <Link
-                        class="btn btn-ghost rounded-btn justify-start"
-                        href="/rules-info/roads-and-degeneration"
-                    >
-                        Roads & Degeneration
-                    </Link>
+                    <SubMenuButtonDesktop label="Roads & Degeneration">
+                        <Link
+                            class="btn btn-ghost rounded-btn justify-start"
+                            href="/rules-info/degeneration"
+                        >
+                            Degeneration
+                        </Link>
+                        <For each={localRoadNames()}>
+                            {(roadName: string) => (
+                                <Link
+                                    class="btn btn-ghost rounded-btn justify-start"
+                                    href={`/rules-info/road/${roadName}`}
+                                >
+                                    {roadName}
+                                </Link>
+                            )}
+                        </For>
+                    </SubMenuButtonDesktop>
                 </MenuButtonDesktop>
 
                 <Link class="btn btn-ghost rounded-btn" href="/impressum">

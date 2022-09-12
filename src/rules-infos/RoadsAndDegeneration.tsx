@@ -1,10 +1,6 @@
 import { Component } from 'solid-js'
-import RoadOfBlood from './roads/RoadOfBlood'
-import RoadOfBones from './roads/RoadOfBones'
-import RoadOfHumanity from './roads/RoadOfHumanity'
-import RoadOfKings from './roads/RoadOfKings'
 
-const RoadsAndDegeneration: Component = () => {
+const Degeneration: Component = () => {
     return (
         <div class="overflow-x-auto">
             <div class="mb-10">
@@ -40,16 +36,8 @@ const RoadsAndDegeneration: Component = () => {
                     </p>
                 </div>
             </div>
-
-            <RoadOfHumanity />
-
-            <RoadOfKings />
-
-            <RoadOfBones />
-
-            <RoadOfBlood />
         </div>
     )
 }
 
-export default RoadsAndDegeneration
+export default Degeneration

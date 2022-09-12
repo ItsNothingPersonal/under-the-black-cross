@@ -3,6 +3,8 @@ import { ExperienceHistoryEntryDirectus } from './experienceHistoryEntryDirectus
 import { JournalEntry } from './journalEntry'
 import { NonPlayerCharacterDirectus } from './nonPlayerCharacterDirectus'
 import { PlayerCharacterDirectus } from './playerCharacterDirectus'
+import { Road } from './road'
+import { RoadInformation } from './roadInformation'
 
 export type DirectusCollections = {
     playerCharacter: PlayerCharacterDirectus
@@ -10,4 +12,6 @@ export type DirectusCollections = {
     clan: Clan
     journal: JournalEntry
     experienceHistory: ExperienceHistoryEntryDirectus
+    road: Road
+    roadInformation: RoadInformation
 }

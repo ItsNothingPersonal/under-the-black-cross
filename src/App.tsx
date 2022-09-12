@@ -1,4 +1,5 @@
 import CharacterSheet from 'components/CharacterSheet'
+import RoadInformationSheet from 'components/RoadInformationSheet'
 import { useRoutes } from 'solid-app-router'
 import { Component } from 'solid-js'
 import ExpHistory from './ExpHistory'
@@ -7,7 +8,7 @@ import Impressum from './Impressum'
 import Journal from './Journal'
 import DiceAndDifficulties from './rules-infos/DiceAndDifficulties'
 import FrenzyAndRoetschreck from './rules-infos/FrenzyAndRoetschreck'
-import RoadsAndDegeneration from './rules-infos/RoadsAndDegeneration'
+import Degeneration from './rules-infos/RoadsAndDegeneration'
 import SpotifyPlaylist from './SpotifyPlaylist'
 
 const routes = [
@@ -32,8 +33,12 @@ const routes = [
         component: FrenzyAndRoetschreck,
     },
     {
-        path: '/rules-info/roads-and-degeneration',
-        component: RoadsAndDegeneration,
+        path: '/rules-info/degeneration',
+        component: Degeneration,
+    },
+    {
+        path: '/rules-info/road/:name',
+        component: RoadInformationSheet,
     },
     {
         path: '/character/:surname?/:prename',

@@ -7,10 +7,10 @@ const SubMenuButtonDesktop: Component<{
     const c = children(() => props.children)
 
     return (
-        <li tabindex="0">
+        <li tabindex="0" class="pl-0">
             <label
                 tabindex="0"
-                class="btn btn-ghost rounded-btn justify-between"
+                class="btn btn-ghost rounded-btn justify-start w-full"
             >
                 {props.label}
                 <svg

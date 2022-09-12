@@ -7,7 +7,7 @@ const SubMenuButtonMobile: Component<{
     const c = children(() => props.children)
 
     return (
-        <li class="justify-between" tabindex="0">
+        <li class="pl-0 justify-between" tabindex="0">
             <label
                 tabindex="0"
                 class="btn btn-ghost rounded-btn justify-between"
@@ -23,7 +23,7 @@ const SubMenuButtonMobile: Component<{
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                 </svg>
             </label>
-            <ul class="menu menu-vertical p-2 z-10 bg-secondary text-secondary-content">
+            <ul class="menu menu-vertical w-64 p-2 z-10 bg-secondary text-secondary-content">
                 {c()}
             </ul>
         </li>
